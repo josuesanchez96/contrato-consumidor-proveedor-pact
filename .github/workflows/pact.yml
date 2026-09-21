@@ -1,0 +1,37 @@
+name: Consumer-Driven Contract Testing (PactV3)
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  contract-tests:
+    name: Pact Contract Testing
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Consumer Contract Tests (Generates Pact File)
+        run: npm run test:consumer
+
+      - name: Archive Pact Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: pact-contracts
+          path: pacts/
+
+      - name: Run Provider Contract Verification
+        run: npm run test:provider
