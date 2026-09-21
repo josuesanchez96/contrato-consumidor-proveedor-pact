@@ -4,7 +4,7 @@ Este proyecto demuestra una arquitectura completa e implementación de **Consume
 
 ---
 
-## 🏗️ Arquitectura del Sistema
+## Arquitectura del Sistema
 
 El sistema se compone de dos aplicaciones/servicios independientes dentro de una arquitectura orientada a servicios (SOA / Microservicios):
 
@@ -31,7 +31,7 @@ graph LR
 
 ---
 
-## 📜 Justificación de la API y Códigos de Estado HTTP
+## Justificación de la API y Códigos de Estado HTTP
 
 Para garantizar el cumplimiento con principios RESTful y una semántica de dominio consistente, se diseñó la API con las siguientes respuestas:
 
@@ -43,7 +43,7 @@ Para garantizar el cumplimiento con principios RESTful y una semántica de domin
 
 ---
 
-## 🛠️ Tecnologías y Versiones Utilizadas
+## Tecnologías y Versiones Utilizadas
 
 - **TypeScript:** `^5.6.0`
 - **Pact JS (`@pact-foundation/pact`):** `^13.2.0` (Especificación PactV3)
@@ -53,7 +53,7 @@ Para garantizar el cumplimiento con principios RESTful y una semántica de domin
 
 ---
 
-## 🧪 Pruebas de Contrato (PactV3 + Vitest)
+## Pruebas de Contrato (PactV3 + Vitest)
 
 ### 1. Generación del Contrato por el Consumidor (`test/consumer.spec.ts`)
 El test del consumidor ejecuta el cliente HTTP real (`InventoryClient`) contra un **Mock Server de Pact** iniciado automáticamente.
@@ -75,7 +75,7 @@ Antes de cada interacción, se ejecutan los **`stateHandlers`** para preparar de
 
 ---
 
-## 🚀 Instrucciones y Comandos de Ejecución
+## Instrucciones y Comandos de Ejecución
 
 ### Requisitos Previos
 Tener instalado Node.js (v18 o superior) y npm.
@@ -115,7 +115,7 @@ El archivo `.github/workflows/pact.yml` define el pipeline de CI/CD que se ejecu
 
 ---
 
-## 🤖 Declaración de Uso de Inteligencia Artificial
+## Declaración de Uso de Inteligencia Artificial
 
 De acuerdo con las directrices académicas del curso:
 - **Herramienta utilizada:** Antigravity AI (Google DeepMind / Gemini Agentic Assistant).
