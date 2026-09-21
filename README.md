@@ -112,3 +112,13 @@ El archivo `.github/workflows/pact.yml` define el pipeline de CI/CD que se ejecu
 3. **Paso Consumidor:** Ejecuta `npm run test:consumer` para validar el cliente y generar el contrato `.json`.
 4. **Artefactos:** Guarda la carpeta `pacts/` como un artefacto del workflow.
 5. **Paso Proveedor:** Ejecuta `npm run test:provider` para verificar la API proveedora contra el contrato generado en el paso anterior.
+
+---
+
+## 🤖 Declaración de Uso de Inteligencia Artificial
+
+De acuerdo con las directrices académicas del curso:
+- **Herramienta utilizada:** Antigravity AI (Google DeepMind / Gemini Agentic Assistant).
+- **Propósito:** Asistencia técnica para proponer la arquitectura del escenario de pruebas, estructuración del contrato utilizando la especificación PactV3 y MatchersV3, configuración del runner Vitest con soporte para binarios FFI, e integración del workflow de GitHub Actions.
+- **Validación:** Todo el código generado, las interacciones HTTP, los estados deterministas del proveedor y la ejecución de la suite de pruebas fueron revisados, validados y comprendidos por el estudiante antes de su entrega final.
+
